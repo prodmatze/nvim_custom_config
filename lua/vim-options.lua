@@ -38,7 +38,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- split window behaviour
-vim.opt.splitright = true
+vim.opt.splitright = true  
 vim.opt.splitbelow = true
 
 -- display incomplete commands in the bottom right corner
@@ -52,6 +52,7 @@ vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'ff', '<ESC>v', { noremap = true, silent = true })
 -- In Normal mode, pressing 'ff' will switch to Visual mode
 vim.api.nvim_set_keymap('n', 'ff', 'v', { noremap = true, silent = true })
+
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
