@@ -23,6 +23,13 @@ require("lazy").setup("plugins")
 
 
 
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
+-- Set hybrid colorscheme options
+--vim.g.hybrid_custom_term_colors = 3
+--vim.g.hybrid_reduced_contrast = 1 -- Remove this line if using the default palette
+
+-- Load the hybrid colorscheme
+vim.cmd('colorscheme catppuccin-mocha')
+
+--require("catppuccin").setup()
+--vim.cmd.colorscheme "gruvbox"
 
